@@ -1,13 +1,14 @@
-import Home from '../pages/Home.vue'
-import About from '../pages/About.vue'
+// import Home from '../pages/Home.vue'
+// import About from '../pages/About.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 
 // 配置映射关系
 
+// 懒加载配置，分包
 const routes = [
-    { path: '/home', component: Home },
-    { path: '/about', component: About },
+    { path: '/home', component: () => import('../pages/Home.vue') },
+    { path: '/about', component: () => import('../pages/Home.vue') },
 ]
 
 
