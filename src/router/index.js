@@ -10,6 +10,7 @@ const routes = [
     { path: '/', redirect: '/home' },
     { path: '/home', component: () => import('../pages/Home.vue') },
     { path: '/about', component: () => import('../pages/Home.vue') },
+    { path: '/user/:username', component: () => import('../pages/User.vue') },
 ]
 
 

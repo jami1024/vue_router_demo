@@ -2,6 +2,7 @@
   <div id='app'>
     <router-link to="/home">首页</router-link>
     <router-link to="/about">关于</router-link>
+    <router-link to="/user/张三">用户</router-link>
     <router-view/>
   </div>
 
