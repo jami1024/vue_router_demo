@@ -11,6 +11,7 @@ const routes = [
     { path: '/home', component: () => import('../pages/Home.vue') },
     { path: '/about', component: () => import('../pages/Home.vue') },
     { path: '/user/:username', component: () => import('../pages/User.vue') },
+    { path: '/:pathMatch(.*)', component: () => import('../pages/404.vue') },
 ]
 
 
