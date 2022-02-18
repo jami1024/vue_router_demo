@@ -7,6 +7,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 // 懒加载配置，分包
 const routes = [
+    { path: '/', redirect: '/home' },
     { path: '/home', component: () => import('../pages/Home.vue') },
     { path: '/about', component: () => import('../pages/Home.vue') },
 ]
